@@ -1,6 +1,5 @@
-const orderForm = document.getElementById('orderForm');
-orderForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    localStorage.setItem('order', JSON.stringify(selectedItems));
-    console.log('Pesanan Anda:', selectedItems);
+const button = document.getElementById('myButton');
+
+button.addEventListener('click', () => {
+  console.log('Tombol ditekan');
 });
