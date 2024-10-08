@@ -1,65 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu Makanan</title>
-  <link rel="stylesheet" href="styles.css">
-  <h1 align="center" style="color:black; font-size:xx-large; font-style: Georgia;">Daftar Menu Restoran Nesya</h1>
-    <hr>
-    <p align="center">
-        <img src="c:\Users\lenovo\Downloads\Pink Brown Circle Cute Brownies Logo.png" align="center" width="200" height="350"> <br>
-    </p>
-    <p style="text-align: center; font-family: Gill sans; font-size: large; color:blue">
-        <a href="file:///C:/SEM%203/Menu%20Makanan%20Nesya.html">MENU</a>
-        <a href="file:///C:/SEM%203/Biodata%20Sederhana%20%232.html">ABOUT</a>
-    </p>
-    </head>
-    <body>
-        <table align="center" border="1" bgcolor="lightgreen">
-            <tr align="center" bgcolor="green" align="center" style="color:black; font-style:oblique">
-                <th>Daftar Makanan</th>
-                <th>Harga</th>  
-                <th>Tautan</th>
-                <th>Menu</th>
-            </tr>
-            <tr>
-                <td>Salad Buah</td>
-                <td>Rp 15. 000</td>
-                <td><a href="https://www.briliofood.net/resep/10-cara-membuat-saus-salad-buah-creamy-enak-dan-praktis-191101o.html">Salad Buah</a></td>
-                <td><img src="https://tse3.mm.bing.net/th?id=OIP.CIGZ1a1hXrd7cw0uYntSCAHaHa&pid=Api&P=0&h=220.png" align="center" width="200px"height="150px"><br><br<td>
-            </tr>
-            <tr>
-                <td>Es Buah</td>
-                <td>Rp 15. 000</td>
-                <td><a href="https://www.astronauts.id/blog/daftar-resep-es-buah-yang-mudah-dan-enak/">Es Buah</a></td>
-                <td><img src="https://tse2.mm.bing.net/th?id=OIP.Gjs5Y4jj7Z-julEiSsxadQHaE8&pid=Api&P=0&h=220.png" align="center" width="200px"height="150px"><br><br<td>
-            </tr>
-            <tr>
-                <td>Jus Mangga</td>
-                <td>Rp 15. 000</td>
-                <td><a href="https://review.bukalapak.com/food/butuh-10-menit-saja-membuat-jus-mangga-segar-dan-lezat-ini-47421">Jus Mangga</a></td>
-                <td><img src="https://tse3.mm.bing.net/th?id=OIP.HC1xu3AP9c7_w8BomyPK-AHaFS&pid=Api&P=0&h=220.png" align="center" width="200px"height="150px"><br><br<td>
-            </tr>
-            <tr>
-                <td>Pancake</td>
-                <td>Rp. 20. 000</td>
-                <td><a href="https://penniesandpancakes.blogspot.com/2013/07/1-year-blog-anniversary-and-my-favorite.html">Pancake</a></td>
-                <td><img src="http://4.bp.blogspot.com/-K3OlqwfuuG4/UeF9Wi0RyBI/AAAAAAAAA24/f46uloxkYqI/s1600/favorite%2Bpancakes2.png." align="center" width="200px"height="150px"><br><br</td>
-            </tr>
-            <tr>
-                <td>Mille Crepes</td>
-                <td>Rp 20. 000</td>
-                <td><a href="https://blog.duniamasak.com/resep-mille-crepes-yang-mudah-dan-sederhana/">Mille Crepes</a></td>
-                <td><img src="https://i2.wp.com/blog.duniamasak.com/wp-content/uploads/resep-mille-crepes-banner-duniamasak.jpg?fit=900%2C520.png" align="center" width="200px"height="150px"><br><br</td>
-            </tr>
-        </table>
-        <form id="orderForm"></form>
-            <h2>Form Pesanan</h2>
-            <button type="submit">Pesan</button>
-        </form>
-    </main>
-    <footer>
-        @Copyright Nesya Pramudia 2024
-    </footer>
-    <script src="script.js"></script>
-    </body>
-    </html>
+</head>
+<body>
+  <center>
+    <h1>Daftar Menu Restoran Linda</h1>
+
+    <!-- Tabel Daftar Menu -->
+    <table border="1" cellpadding="10">
+      <tr>
+        <th>Daftar Makanan</th>
+        <th>Harga</th>
+      </tr>
+      <tr>
+        <td>Ayam Geprek</td>
+        <td>Rp 15,000</td>
+      </tr>
+      <tr>
+        <td>Rendang</td>
+        <td>Rp 20,000</td>
+      </tr>
+      <tr>
+        <td>Mie Ayam</td>
+        <td>Rp 12,000</td>
+      </tr>
+      <tr>
+        <td>Jus Avocado</td>
+        <td>Rp 5,000</td>
+      </tr>
+    </table>
+
+    <!-- Form untuk Memesan Makanan -->
+    <h2>Form Pesanan</h2>
+    <form id="formPesanan">
+      <label><input type="checkbox" name="menu" value="Ayam Geprek" data-price="15000"> Ayam Geprek - Rp 15,000</label><br>
+      <label><input type="checkbox" name="menu" value="Rendang" data-price="20000"> Rendang - Rp 20,000</label><br>
+      <label><input type="checkbox" name="menu" value="Mie Ayam" data-price="12000"> Mie Ayam - Rp 12,000</label><br>
+      <label><input type="checkbox" name="menu" value="Jus Avocado" data-price="5000"> Jus Avocado - Rp 5,000</label><br><br>
+      <button type="button" onclick="tampilkanPesanan()">Selesai Pesan</button>
+    </form>
+  </center>
+
+  <script src="script.js"></script>
+</body>
+</html>
