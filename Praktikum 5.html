@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <tittle>Penjumlahan</tittle>
+  </head>
+  <body>
+    <p>
+      script language="Javascript">
+      function jumlah()
+      {
+      var bil1 = parseFloat(document.Penghitung.bilangan1.value);
+      if (isNaN (bil1))
+      bil1=0.0;
+      var hasil = bil1 + bil2;
+      console.log("Hasil Penjumlahan = " + hasil);
+      }
+      </script>
+
+      <form name="Penghitung>
+        <h1>Memasukkan Data Via Form</h1>
+
+        <pre>
+        Bilangan Pertama :<input type="text" size="11" name="bilangan1"/>
+        Bilangan Kedua :<input type="text" size="11" name="bilangan2"/>
+        </pre>
+
+        <input type="button" value="Jumlahkan" onclick="jumlah()"/>
+      </form>
+    
+    </p>
+  </body>
+</html>
