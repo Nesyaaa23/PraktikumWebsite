@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Resep Makanan</title>
+	<style>
+		 body {
+                font-family: 'Open Sans',sans-serif;
+                }
+            header {
+                min-height:100px;
+                border-bottom:2px solid #eaa454;
+                }
+            h1 {
+                font-size:28px;
+                color:#4f4919;
+                text-align:center;
+				border-style: dashed;
+				background:lightblue;
+                padding:10px
+                }
+			h2 {
+				text-align: center;
+                color:#4f4919;
+                border-style: dashed;
+                border-radius: 10px;
+                background-color: lightblue;
+			}
+			ul ul li {
+                margin: 5px;
+                padding: 0;
+                width: 50;
+                height: 30px;
+                background-color: rgb(252, 252, 200);
+                text-align:left;
+     		}
+			ul ol {
+				margin: 10px;
+                padding: 10px;
+                width: 50;
+                height: 150px;
+                background-color: lightcyan;
+                text-align:left;
+				padding: 20px;
+    			border: 1px solid #ccc;
+    			border-radius: 5px;
+    			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+			}
+	</style>
+</head>
+<body>
+	<h1>Resep Makanan Favorit</h1>
+	<p style="text-align: center;">
+		<img src="https://tse3.mm.bing.net/th?id=OIP.CIGZ1a1hXrd7cw0uYntSCAHaHa&pid=Api&P=0&h=220.jpg"width="200px"height="150px"><br>
+	</p>
+	<h2>Salad Buah</h2>
+	<ul>
+		<li><strong>Bahan:</strong>
+			<ul>
+				<li>Semangka</li>
+				<li>Melon</li>
+				<li>Kiwi</li>
+				<li>Jeruk</li>
+                <li>Strawberry</li>
+                <li>Apel</li>
+                <li>nata de coco</li>
+                <li>jelly</li>
+				<li>Susu kental manis</li>
+				<li>Mayonaise</li>
+                <li>Keju</li>
+			</ul>
+		</li>
+		<li><strong>Langkah- langkah:</strong>
+			<ol>
+				<li>Cuci buah buahan hingga bersih, lalu potong buah dengan ukuran kecil</li>
+                <li>Kemudian campurkan susu kental manis, mayonaise, parutan keju menjadi satu, untuk menjadi saus</li>
+                <li>Campur semua buah- buahan ke dalam wadah</li>
+				<li>Tambahkan nata de coco dan jelly pada wadah, secukupnya</li>
+				<li>Kemudian tuangkan saus pada buah dan aduk menjadi satu</li>
+				<li>Tambahkan parutan keju sebagai topping</li>
+                <li>Lalu tambahkan jeruk dan strawberry sebagai garnish untuk mempercantik salad buah</li>
+                <li>Salad buah siap dihidangkan</li>
+			</ol>
+		</li>
+	</ul>
+	<button onclick="CekResep()">Cek Resep</button>
+    <button onclick="window.print()">Cetak</button>
+    <footer>@Copyright Nesya Pramudia 2024</footer>
+
+    <script>
+        function CekResep() {
+            console.log("Resep: Salad Buah");
+        }
+    </script>
+</body>
+</html>
