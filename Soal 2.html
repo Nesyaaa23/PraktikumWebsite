@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pengecekan Membership</title>
+</head>
+<body>
+    <script>
+        function cekKelulusan(nama, matematika, biologi, fisika, kimia) {
+            const nilaiMinimal = 60;
+            const semuaLulus = matematika >= nilaiMinimal && biologi >= nilaiMinimal && fisika >= nilaiMinimal && kimia >= nilaiMinimal;
+            const semuaTidakLulus = matematika < nilaiMinimal && biologi < nilaiMinimal && fisika < nilaiMinimal && kimia < nilaiMinimal;
+            
+            if (semuaLulus) {
+                alert(`Semua siswa lulus, termasuk ${nama}`);
+            } else if (semuaTidakLulus) {
+                alert(`Semua siswa tidak lulus, termasuk ${nama}`);
+            } else {
+                if (matematika >= nilaiMinimal && biologi >= nilaiMinimal && fisika >= nilaiMinimal && kimia >= nilaiMinimal) {
+                    alert(`${nama} lulus`);
+                } else {
+                    alert(`${nama} tidak lulus`);
+                }
+            }
+        }
+        const siswa = [
+            { nama: 'Andi', nilai: [70, 80, 70, 90] },
+            { nama: 'Ria', nilai: [90, 65, 80, 70] },
+            { nama: 'Bima', nilai: [100, 70, 95, 50] },
+            { nama: 'Toni', nilai: [60, 60, 70, 60] },
+            { nama: 'Putri', nilai: [70, 100, 80, 75] }];
+        siswa.forEach(s => {
+            cekKelulusan(s.nama, ...s.nilai);});
+    </script>
+</body>
+</html>
