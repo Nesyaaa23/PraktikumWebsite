@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pengecekan Membership</title>
+</head>
+<body>
+    <script>
+    function hitungTotalBelanja(hargaBarang, jumlahBarang) {
+        const batasDiskon = 50;
+        const diskon = 0.1; 
+        
+        const hargaTotalAwal = hargaBarang * jumlahBarang;
+        
+        if (jumlahBarang > batasDiskon) {
+            const diskonRupiah = hargaTotalAwal * diskon;
+            const hargaTotalAkhir = hargaTotalAwal - diskonRupiah;
+            
+            console.log("Harga keseluruhan tanpa diskon:", hargaTotalAwal);
+            console.log("Diskon yang diberikan:", diskonRupiah);
+            console.log("Harga setelah diskon:", hargaTotalAkhir);
+        } else {
+            console.log("Harga keseluruhan:", hargaTotalAwal);
+            console.log("Anda belum memenuhi syarat diskon.");
+        }
+    }
+    
+    const hargaBarang = parseFloat(prompt("Masukkan harga barang per satuan:"));
+    const jumlahBarang = parseInt(prompt("Masukkan jumlah barang yang dibeli:"));
+    
+    hitungTotalBelanja(hargaBarang, jumlahBarang); 
+    </script>
+</body>
+</html>
