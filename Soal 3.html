@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pengecekan Membership</title>
+</head>
+<body>
+    <script>
+    function cekKupon(totalKunjungan) {
+        const kunjunganGratis = 10;
+        const potonganKupon = totalKunjungan;
+        
+        if (totalKunjungan >= kunjunganGratis) {
+            console.log(`Anda sudah melakukan ${totalKunjungan} kunjungan.`);
+            console.log(`Anda memiliki ${potonganKupon} potongan kupon.`);
+            console.log("Selamat! Anda berhak mendapatkan 1 kali kunjungan gratis.");
+        } else {
+            console.log(`Anda sudah melakukan ${totalKunjungan} kunjungan.`);
+            console.log(`Anda memiliki ${potonganKupon} potongan kupon.`);
+            console.log("Anda belum berhak mendapatkan kunjungan gratis.");
+        }
+        }
+        
+        const totalKunjungan = parseInt(prompt("Masukkan total kunjungan Anda:"));
+        cekKupon(totalKunjungan); 
+    </script>
+</body>
+</html>
